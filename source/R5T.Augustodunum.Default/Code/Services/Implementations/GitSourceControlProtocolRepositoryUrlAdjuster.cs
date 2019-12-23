@@ -26,7 +26,7 @@ namespace R5T.Augustodunum.Default
 
             if (!gitTerminated)
             {
-                throw new Exception($"Repository URL was NOT git terminated: {repositoryUrl}");
+                throw new Exception($"Repository URL was NOT\".git\" terminated: {repositoryUrl}");
             }
 
             return trunkAdjustedUrl;
