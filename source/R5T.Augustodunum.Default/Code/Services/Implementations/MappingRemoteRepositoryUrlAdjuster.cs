@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 
-using R5T.Magyar.Extensions;
+using R5T.Magyar.Extensions;using R5T.T0064;
 
 
 namespace R5T.Augustodunum.Default
-{
-    public class MappingRemoteRepositoryUrlAdjuster : IMappingRemoteRepositoryUrlAdjuster
+{[ServiceImplementationMarker]
+    public class MappingRemoteRepositoryUrlAdjuster : IMappingRemoteRepositoryUrlAdjuster,IServiceImplementation
     {
         public string AdjustRemoteRepositoryUrl(string repositoryUrl)
         {

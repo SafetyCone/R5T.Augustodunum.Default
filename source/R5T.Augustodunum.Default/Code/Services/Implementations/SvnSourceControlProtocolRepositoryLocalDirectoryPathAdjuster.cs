@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 
-using R5T.Lombardy;
+using R5T.Lombardy;using R5T.T0064;
 
 
 namespace R5T.Augustodunum.Default
-{
-    public class SvnSourceControlProtocolRepositoryLocalDirectoryPathAdjuster : ISourceControlProtocolRepositoryLocalDirectoryPathAdjuster
+{[ServiceImplementationMarker]
+    public class SvnSourceControlProtocolRepositoryLocalDirectoryPathAdjuster : ISourceControlProtocolRepositoryLocalDirectoryPathAdjuster,IServiceImplementation
     {
         private IStringlyTypedPathOperator StringlyTypedPathOperator { get; }
 

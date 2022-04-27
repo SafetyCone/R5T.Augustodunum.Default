@@ -1,14 +1,14 @@
-﻿using System;
+using System;
 
-using R5T.Magyar.Extensions;
+using R5T.Magyar.Extensions;using R5T.T0064;
 
 
 namespace R5T.Augustodunum.Default
-{
+{[ServiceImplementationMarker]
     /// <summary>
     /// Adjusts mapping repository URLs as required for the git source control protocol.
     /// </summary>
-    public class SvnSourceControlProtocolRepositoryUrlAdjuster : ISourceControlProtocolRepositoryUrlAdjuster
+    public class SvnSourceControlProtocolRepositoryUrlAdjuster : ISourceControlProtocolRepositoryUrlAdjuster,IServiceImplementation
     {
         public string AdjustRepositoryUrl(string repositoryUrl)
         {
